@@ -1,0 +1,29 @@
+@import url('assets/styles/normalize.css');
+@import url('assets/styles/variables.css');
+@import url('assets/styles/fonts.css');
+@import url('assets/styles/globals.css');
+
+/* кнопки в globals */
+@import url('assets/styles/blocks/button.css');
+
+/* subheader в globals */
+
+@import url('assets/styles/blocks/header.css');
+@import url('assets/styles/blocks/subheader.css');
+@import url('assets/styles/blocks/dropdown.css');
+@import url('assets/styles/blocks/banner.css');
+@import url('assets/styles/blocks/services.css');
+@import url('assets/styles/blocks/guarantee.css');
+@import url('assets/styles/blocks/projects.css');
+@import url('assets/styles/blocks/reviews.css');
+@import url('assets/styles/blocks/contacts.css');
+@import url('assets/styles/blocks/renovations.css');
+@import url('assets/styles/blocks/remont.css');
+@import url('assets/styles/blocks/faq.css');
+@import url('assets/styles/blocks/footer.css');
+
+@import url('assets/styles/media/desktop.css');
+@import url('assets/styles/media/table-portrait-media.css');
+@import url('assets/styles/media/table-landscape-media.css');
+@import url('assets/styles/media/mobile-landscape-media.css');
+@import url('assets/styles/media/mobile-portrait-media.css');

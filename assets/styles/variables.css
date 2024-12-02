@@ -1,0 +1,26 @@
+:root {
+  --color-dark: #222222;
+  --color-blur-dark: #222222;
+  /* opacity 60% */
+  --color-accent: #DAA78D;
+  --color-light: #F9F9FC;
+  --color-gray: #ECECEC;
+
+
+
+  --container-width: 1200px;
+  --container-padding: 20px;
+  --section-padding: 64px;
+
+  /* --border: 1px solid var(--orange-color); */
+  --border-radius: 100px;
+
+  --font-regular-size: 16px;
+  --font-regular-line-height: 20px;
+  --font-title-size: 52px;
+  --font-title-line-height: 64px;
+
+  --header-height: 76px;
+
+  --transition-duration: 0.2s;
+}
