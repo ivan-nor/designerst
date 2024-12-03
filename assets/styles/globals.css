@@ -1,11 +1,13 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--color-dark);
 
+  font-family: "Montserrat Regular";
   font-size: var(--font-regular-size);
   line-height: var(--font-regular-line-height);
-  font-family: "Montserrat Regular";
+
+  color: var(--color-light);
 }
 
 h1,
@@ -45,5 +47,25 @@ img {
 
 section {
   padding-block: var(--section-padding);
+}
+
+.hide, .hide * {
+  display: none !important;
+  /* visibility: hidden; */
+  /* max-height: 0; */
+  /* opacity: 0; */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
 }
 
