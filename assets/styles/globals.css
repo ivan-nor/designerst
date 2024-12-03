@@ -69,3 +69,27 @@ section {
   overflow: hidden !important;
 }
 
+.button {
+  padding: 12px 20px;
+  box-sizing: border-box;
+
+  font-family: "Montserrat Bold";
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+  white-space: nowrap;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 100px;
+}
+
+.button>span::first-letter {
+  text-transform: uppercase;
+}
+
+.button-transparent {
+  background-color: transparent;
+  color: var(--color-light);
+}
+
