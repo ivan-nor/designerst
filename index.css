@@ -4,25 +4,25 @@
 @import url('assets/styles/globals.css');
 
 /* #TODO: кнопки в globals */
-@import url('assets/styles/blocks/button.css');
+/* @import url('assets/styles/blocks/button.css'); */
 
 /* #TODO: subheader в globals */
 
 @import url('assets/styles/blocks/header.css');
 
 /* #TODO: dropdown to globals */
-@import url('assets/styles/blocks/dropdown.css');
+/* @import url('assets/styles/blocks/dropdown.css'); */
 
 @import url('assets/styles/blocks/banner.css');
-@import url('assets/styles/blocks/services.css');
-@import url('assets/styles/blocks/guarantee.css');
+/* @import url('assets/styles/blocks/services.css'); */
+/* @import url('assets/styles/blocks/guarantee.css');
 @import url('assets/styles/blocks/projects.css');
 @import url('assets/styles/blocks/reviews.css');
 @import url('assets/styles/blocks/contacts.css');
 @import url('assets/styles/blocks/renovations.css');
 @import url('assets/styles/blocks/remont.css');
 @import url('assets/styles/blocks/faq.css');
-@import url('assets/styles/blocks/footer.css');
+@import url('assets/styles/blocks/footer.css'); */
 
 @import url('assets/styles/media/desktop.css');
 @import url('assets/styles/media/table-portrait-media.css');

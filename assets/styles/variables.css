@@ -1,5 +1,5 @@
 :root {
-  --color-dark: #222222;
+  --color-dark: rgb(34, 34, 34);
   --color-blur-dark: #222222;
   /* opacity 60% */
   --color-accent: #DAA78D;
@@ -24,4 +24,9 @@
   --header-height: 76px;
 
   --transition-duration: 0.2s;
+
+  --swiper-navigation-size: 18px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
 }
