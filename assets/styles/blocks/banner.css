@@ -1,0 +1,47 @@
+.banner {
+  padding: 0%;
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner__body {
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+
+  flex: 1 1 560px;
+
+  border: 1px solid var(--color-black);
+}
+
+.banner__title {
+  font-family: "Tenor Sans";
+  font-size: 52px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.banner__footer {
+  display: flex;
+  gap: 24px;
+}
+
+.banner__footer-button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.banner__image {
+  /* width: auto;
+  height: 100%; */
+
+  flex: 1 1 560px;
+}
