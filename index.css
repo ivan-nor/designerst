@@ -3,14 +3,16 @@
 @import url('assets/styles/fonts.css');
 @import url('assets/styles/globals.css');
 
-/* кнопки в globals */
+/* #TODO: кнопки в globals */
 @import url('assets/styles/blocks/button.css');
 
-/* subheader в globals */
+/* #TODO: subheader в globals */
 
 @import url('assets/styles/blocks/header.css');
-@import url('assets/styles/blocks/subheader.css');
+
+/* #TODO: dropdown to globals */
 @import url('assets/styles/blocks/dropdown.css');
+
 @import url('assets/styles/blocks/banner.css');
 @import url('assets/styles/blocks/services.css');
 @import url('assets/styles/blocks/guarantee.css');
