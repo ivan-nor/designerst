@@ -12,15 +12,88 @@
 </head>
 
 <body>
-  <main>
-    <section>
+  <header class="header">
+    <div class="container">
+      <a class="header__logo" href="#">
+        <div class="header__logo-image"></div>
+      </a>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__item header__submenu">
+            <a href="#" class="header__link">
+              <span>услуги</span>
+              <div class="header__dropdown-icon">
+                <img src="/assets/icons/dropdown_arrow.svg" alt="dropdown list icon" />
+              </div>
+            </a>
+            <ul class="header__submenu-list hide">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Подпункт меню 1</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Подпункт меню 2</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Подпункт меню 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">
+              <span>портфолио</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              <span>контакты</span>
+            </a>
+          </li>
+          <li class="header__item header__submenu">
+            <a href="#" class="header__link">
+              <span>о нас</span>
+              <div class="header__dropdown-icon">
+                <img src="/assets/icons/dropdown_arrow.svg" alt="dropdown list icon" />
+              </div>
+            </a>
+            <ul class="header__submenu-list hide">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Подпункт меню 1</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Подпункт меню 2</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Подпункт меню 3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">
+              <span>блог</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__burger button desktop-hidden table-hidden" type="button">
+        <span class="visually-hidden">Open menu</span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+      <button class="header__close button desktop-hidden hide"></button>
+    </div>
+  </header>
 
+  <main>
+    <section class="banner">
+      <div class="container">
+
+      </div>
     </section>
   </main>
 
   <script src="index.js"></script>
-  <script src="swiper-bundle.min.js"></script>
-  <script src="swiper.js"></script>
-  <script src="fancybox.umd.js"></script>
+  <script src="/assets/scripts/swiper-bundle.min.js"></script>
+  <script src="/assets/scripts/swiper.js"></script>
+  <script src="/assets/scripts/fancybox.umd.js"></script>
 </body>
 </html>
