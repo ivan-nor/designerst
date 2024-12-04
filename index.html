@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="icon" href="/assets/icons/favicon.svg"><!-- 32×32 -->
   <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/styles/fancybox.css" />
   <link rel="stylesheet" href="index.css">
 
-  <title>Designerst</title>
+  <title>Designrest</title>
 </head>
 
 <body>
@@ -104,8 +104,26 @@
             </button>
           </div>
         </div>
-        <div class="banner-image">
-          <img src="/assets/images/banner.png" alt="banner image" />
+        <div class="banner__image">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/assets/images/slide_1.png" alt="slide 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/slide_2.png" alt="slide 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/assets/images/slide_3.png" alt="slide 3" />
+              </div>
+            </div>
+            <div class="swiper-controls">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <!-- <img src="/assets/images/banner.png" alt="banner image" /> -->
         </div>
       </div>
     </section>
@@ -122,13 +140,9 @@
             </div>
           </div>
           <div class="swiper-controls">
-            <div class="swiper-button-prev">
-              <!-- <img src="/assets/icons/dropdown_arrow.svg" alt=""> -->
-            </div>
+            <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next">
-              <!-- <img src="/assets/icons/arrow_forward.svg" alt=""> -->
-            </div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>

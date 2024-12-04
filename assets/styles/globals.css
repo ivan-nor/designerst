@@ -93,9 +93,6 @@ section {
   color: var(--color-light);
 }
 
-.swiper-container {
-  position: relative;
-}
 
 .swiper-controls {
   position: relative;
@@ -121,20 +118,12 @@ section {
 .swiper-button-next {
   position: static;
   margin-top: 0;
-  /* width: 24px;
-  height: 24px; */
-  /* background-color: rgba(0, 0, 0, 0.5); */
   color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  /* content: ''; */
 }
 
 .swiper-pagination {

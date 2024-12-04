@@ -45,3 +45,29 @@
 
   flex: 1 1 560px;
 }
+
+.banner__image .swiper-slide {
+  /* max-height: 500px; */
+  /* max-width: 560px; */
+
+  height: 100%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.banner__image .swiper {
+  /* max-height: 500px; */
+  max-width: 560px;
+
+  width: 100%;
+  height: 500px; /* Задает высоту всего контейнера */
+  overflow: hidden;
+}
+
+.banner__image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
