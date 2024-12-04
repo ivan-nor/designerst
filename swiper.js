@@ -18,6 +18,14 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 0,
   autoHeight: true,
   centeredSlides: true,
+  breakpoints: {
+    980: {
+      width: 400,
+    },
+    1200: {
+      width: 560,
+    }
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

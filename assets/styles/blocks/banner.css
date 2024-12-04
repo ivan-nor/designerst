@@ -39,6 +39,12 @@
   align-items: center;
 }
 
+.banner__footer-button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .banner__image {
   /* width: auto;
   height: 100%; */
@@ -70,4 +76,9 @@
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.swiper-pagination-bullet-active {
+  width: 8px;
+  height: 8px;
 }

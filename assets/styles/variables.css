@@ -28,5 +28,9 @@
   --swiper-navigation-size: 18px;
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-color: var(--swiper-theme-color);
+  --swiper-navigation-color: var(--color-light);
+  --swiper-theme-color: var(--color-accent);
+  --swiper-pagination-bullet-inactive-color: var(--color-light);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 4px;
 }

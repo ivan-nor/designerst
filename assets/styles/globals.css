@@ -93,6 +93,25 @@ section {
   color: var(--color-light);
 }
 
+.button-transparent svg {
+  fill: var(--color-light);
+}
+
+.button:hover {
+  background-color: var(--color-light);
+  border-color: var(--color-light);
+}
+
+.button-transparent:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border-color: var(--color-light);
+}
+
+.button-transparent:hover svg {
+  fill: var(--color-dark);
+}
+
 
 .swiper-controls {
   position: relative;
@@ -129,6 +148,7 @@ section {
 .swiper-pagination {
   position: static;
   display: flex;
+  align-items: center;
 
   flex: 1;
 }
