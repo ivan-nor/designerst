@@ -1,0 +1,44 @@
+.lead__body {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.lead__images {
+  padding: 36px 0;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.lead__image {
+  max-width: 560px;
+  max-height: 560px;
+
+  flex: 1 0 560px;
+
+  /* overflow: hidden; */
+}
+
+.lead__image img {
+  /* max-height: 560px; */
+  height: auto;
+  width: 100%;
+
+  object-position: center bottom;
+  object-fit: contain;
+}
+
+.lead__title {
+  font-size: 52px;
+  line-height: 64px;
+  font-family: "Tenor Sans";
+}
+
+.lead__description {
+  max-width: 700px;
+}
+
+.lead__description::first-letter {
+  text-transform: uppercase;
+}
