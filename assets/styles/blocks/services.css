@@ -1,0 +1,138 @@
+.services__title {
+  padding-bottom: 40px;
+
+  font-family: "Tenor Sans";
+  font-size: 52px;
+  line-height: 64px;
+}
+
+.services__body {
+  height: 1200px;
+  width: 100%;
+
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.services__card {
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  outline: 1px solid var(--color-accent);
+  outline-offset: -1px;
+  border-radius: 12px;
+}
+
+.services__card-title {
+  font-family: "Tenor Sans";
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+
+  color: var(--color-accent);
+}
+
+.services__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.services__card-item {
+  position: relative;
+
+  padding-left: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.services__card-item > span::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--color-light);
+}
+
+.services__card-price {
+  font-family: "Montserrat SemiBold";
+  font-size: 32px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+.services__card:nth-child(1) {
+  width: 31%;
+}
+
+.services__card:nth-child(2) {
+  width: 31%;
+}
+
+.services__card:nth-child(3) {
+  width: calc(69% - 40px);
+}
+
+.services__support {
+  width: calc(69% - 40px);
+
+  padding: 24px;
+
+  background-image: url("/assets/images/support.png");
+  background-position: right bottom;
+  
+  border-radius: 12px;
+}
+
+.services__support-title {
+  max-width: 400px;
+  padding-bottom: 16px;
+
+  font-family: "Tenor Sans";
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+.services__support-description {
+  max-width: 400px;
+  padding-bottom: 20px;
+}
+
+.services__support-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.services__support-input {
+  max-width: 260px;
+  height: 44px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-light);
+}
+
+.services__support-input::placeholder {
+  color: var(--color-light);
+}
+
+.services__support-button {
+  margin-top: 8px;
+  max-width: max-content;
+}
