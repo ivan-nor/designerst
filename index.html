@@ -118,7 +118,7 @@
           </div>
         </div>
         <div class="banner__image">
-          <div class="swiper">
+          <div class="banner__swiper swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="/assets/images/banner.png" alt="banner" />
@@ -280,6 +280,57 @@
                 autocomplete="on" />
               <button type="submit" class="services__support-button button">Получить консультацию</button>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+        <h2 id="tabs__label" class="projects__title" data-text="Наши проекты">Наши проекты</h2>
+        <div id="projects__tabs" class="tabs mobile-hidden" role="tablist" aria-labelledby="tabs__label">
+          <button tabindex="0" class="tabs__tab-button button" role="tab" type="button" id="projects__tab-1"
+            aria-selected="true" aria-controls="projects-tabpanel-1">
+            жилые
+          </button>
+          <button tabindex="-1" class="tab-button button" role="tab" type="button" id="projects__tab-2"
+            aria-selected="false" aria-controls="projects-tabpanel-2">
+            коммерческие
+          </button>
+        </div>
+        <div id="projects__tabpanel-1" role="tabpanel" class="projects__tabpanel active">
+          <div class="projects__swiper">
+            <div class="swiper-wrapper">
+              <div class="projects__item swiper-slide">
+                <div class="projects__banner">
+                  <h3 class="projects__banner-title">МОРСКОЙ 28</h3>
+                  <p class="projects__banner-description">Проект представляет собой семейную квартиру площадью 190 кв.м выполненную в светлом интерьере с теплой атмосферой. Уют этому пространству придает большое количество зелени, которая гармонично вписывается в общий дизайн, делая квартиру Cat friendly.</p>
+                  <button class="projects__banner-button button">смотреть все фото</button>
+                </div>
+                <img src="/assets/images/project_morskoj.png" alt="slide 1" />
+              </div>
+              <div class="swiper-slide">
+                <div class="projects__banner">
+                  <h3 class="projects__banner-title">АВАТАР</h3>
+                  <p class="projects__banner-description">Проект дизайна интерьера квартиры площадью 90 кв.м в ЖК «Аватар» представляет собой воплощение современного элитного стиля, сочетающего графитовые оттенки с теплотой американского ореха. Этот уникальный интерьер создан для тех, кто ценит роскошь и функциональность в каждом элементе.</p>
+                  <button class="projects__banner-button button">смотреть все фото</button>
+                </div>
+                <img src="/assets/images/project_avatar.png" alt="slide 2" />
+              </div>
+              <div class="swiper-slide">
+                <div class="projects__banner">
+                  <h3 class="projects__banner-title">PUSHKIN</h3>
+                  <p class="projects__banner-description">Проект представляет собой стильную и современную квартиру площадью 100 кв.м, расположенную в жилом комплексе "Инкери" в городе Пушкин. Интерьер квартиры выполнен в светлых тонах, что придает пространству ощущение легкости и простора.</p>
+                  <button class="projects__banner-button button">смотреть все фото</button>
+                </div>
+                <img src="/assets/images/project_pushkin.png" alt="slide 3" />
+              </div>
+            </div>
+            <div class="swiper-controls">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </div>
       </div>
