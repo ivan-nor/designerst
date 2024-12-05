@@ -54,9 +54,41 @@
 }
 
 .lead__title {
+  position: relative;
+
   font-size: 52px;
   line-height: 64px;
   font-family: "Tenor Sans";
+}
+
+h2.lead__title::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: transparent;
+
+  text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+h2.lead__title::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  color: transparent;
+  background-image: linear-gradient(180deg, rgba(0,0,0, 0.25), var(--color-light));
+  /* text-shadow: 0 -5px 4px rgba(0, 0, 0, 0.25); */
+
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .lead__description {
