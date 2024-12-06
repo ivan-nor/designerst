@@ -58,3 +58,21 @@ for (const tab of projectsTabButtons) {
     console.log('tab, tabpanel, activeTabElemennt :>> ', tab, tabPanel, activeTabElement, e.target);
   })
 }
+
+// РАСКРАШИВАНИЕ ЗВЕЗД РЕЙТИНГА
+const reviewsRatings = document.querySelectorAll('.reviews__card-rating')
+for (const rating of reviewsRatings) {
+  const value = rating.getAttribute('data-rating')
+  const stars = rating.querySelectorAll('.reviews__card-star')
+  console.log(rating, value, stars);
+
+  for (star of stars) {
+    const starNumber = star.getAttribute('data-star')
+    const path = star.querySelector('path')
+    console.log(starNumber, path);
+
+    if (value >= starNumber) {
+      path.style.fill = "#F9F9FC"
+    }
+  }
+}

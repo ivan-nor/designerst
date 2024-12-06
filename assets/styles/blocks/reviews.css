@@ -1,0 +1,86 @@
+.reviews__swiper {
+  position: relative;
+
+  padding-inline: 48px;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.reviews__swiper .swiper-wrapper {
+  width: 100%;
+  height: 100% !important;
+
+  overflow: hidden;
+}
+
+.reviews__card {
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 12px;
+}
+
+.reviews__card-header {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 8px;
+  align-items: center;
+}
+
+.reviews__card-title {
+  grid-column: 1/4;
+  grid-row: 1/2;
+
+  font-family: "Tenor Sans";
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-accent);
+}
+
+.reviews__card-rating {
+  grid-column: 4/5;
+  grid-row: 1/2;
+
+  justify-self: end;
+
+  display: flex;
+  gap: 10px;
+}
+
+.reviews__card-star {
+  display: flex;
+  align-items: center;
+}
+.reviews__card-rating svg {
+  stroke: var(--color-light);
+  stroke-width: 1.5px;
+}
+
+.reviews__card-link {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  
+  font-size: 14px;
+  color: var(--color-gray);
+  text-decoration: underline;
+
+}
+.reviews__card-date {
+  grid-column: 3/5;
+  grid-row: 2/3;
+
+  justify-self: end;
+
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.reviews__card-text {
+  color: var(--color-gray);
+}

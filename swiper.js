@@ -67,3 +67,14 @@ const projectsCommerceSwiper = new Swiper('.projects__swiper-commerce', {
     clickable: true,
   },
 });
+
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 40,
+  autoHeight: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

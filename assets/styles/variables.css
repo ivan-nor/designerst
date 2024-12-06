@@ -5,6 +5,7 @@
   --color-accent: #DAA78D;
   --color-light: #F9F9FC;
   --color-gray: #ECECEC;
+  --color-secondary: #5D5D5D;
   --color-black: #000000;
 
 
@@ -20,6 +21,7 @@
   --font-regular-line-height: 20px;
   --font-title-size: 52px;
   --font-title-line-height: 64px;
+  --letter-spacing: -0.005em;
 
   --header-height: 76px;
 
