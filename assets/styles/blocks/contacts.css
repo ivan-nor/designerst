@@ -1,0 +1,136 @@
+.contacts__title {
+  margin-bottom: 40px;
+
+  font-family: "Tenor Sans";
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+}
+
+.contacts__container {
+  display: flex;
+  gap: 40px;
+}
+
+.contacts__card {
+  padding: 24px;
+  width: 31%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  flex-shrink: 1;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 12px;
+}
+
+
+.contacts__card-list,
+.contacts__socials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts__card-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts__card-link svg {
+  fill: var(--color-light);
+}
+
+.contacts__socials-item {
+  padding-block: 1px;
+  width: max-content;
+
+  border-bottom: 2px solid var(--color-accent);
+  box-sizing: content-box;
+}
+
+.contacts__socials-link {
+  font-family: "Montserrat Bold";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__support {
+  padding: 24px;
+  width: calc(69% - 40px);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  border: 1px solid var(--color-accent);
+  border-radius: 12px;
+  background-color: var(--color-accent);
+
+}
+
+.contacts__support-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts__support-title {
+  font-family: "Tenor Sans";
+  font-size: 32px;
+  line-height: 40px;
+
+  color: var(--color-dark);
+}
+
+.contacts__support-description {
+  color: var(--color-dark);
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts__input {
+  height: 44px;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-light);
+  color: var(--color-light);
+}
+
+.contacts__input:nth-child(2) {
+  margin-top: 4px;
+}
+
+.contacts__input::placeholder {
+  color: var(--color-light);
+}
+
+.contacts__support-button {
+  margin-top: 8px;
+  max-width: max-content;
+}
+
+.contacts__button {
+  margin-top: 12px;
+  width: max-content;
+
+  background-color: var(--color-light);
+}
+
+.contacts__form-description {
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.contacts__form-description strong {
+  font-family: "Montserrat Bold";
+}
