@@ -20,7 +20,7 @@
   width: 134px;
   height: 20px;
 
-  background-image: url("assets/images/logo.svg");
+  background-image: url("../../images/logo.svg");
 }
 
 .header__menu {
