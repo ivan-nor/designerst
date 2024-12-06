@@ -36,7 +36,23 @@ const bannerSwiper = new Swiper('.banner__swiper', {
   },
 });
 
-const projectsSwiper = new Swiper('.projects__swiper', {
+const projectsLivingSwiper = new Swiper('.projects__swiper-living', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
+  autoHeight: true,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+const projectsCommerceSwiper = new Swiper('.projects__swiper-commerce', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 0,

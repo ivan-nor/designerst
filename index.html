@@ -288,18 +288,19 @@
     <section class="projects">
       <div class="container">
         <h2 id="tabs__label" class="projects__title" data-text="Наши проекты">Наши проекты</h2>
-        <div id="projects__tabs" class="tabs mobile-hidden" role="tablist" aria-labelledby="tabs__label">
-          <button tabindex="0" class="tabs__tab-button button" role="tab" type="button" id="projects__tab-1"
-            aria-selected="true" aria-controls="projects-tabpanel-1">
+        <div id="projects__tabs-switcher" class="tabs mobile-hidden" role="tablist" aria-labelledby="tabs__label">
+          <button tabindex="0" class="projects__tab tabs__button" role="tab" type="button" id="projects__tab-1"
+            aria-selected="true" aria-controls="projects__tabpanel-1">
             жилые
           </button>
-          <button tabindex="-1" class="tab-button button" role="tab" type="button" id="projects__tab-2"
-            aria-selected="false" aria-controls="projects-tabpanel-2">
+          <button tabindex="-1" class="projects__tab tabs__button" role="tab" type="button" id="projects__tab-2"
+            aria-selected="false" aria-controls="projects__tabpanel-2">
             коммерческие
           </button>
         </div>
+
         <div id="projects__tabpanel-1" role="tabpanel" class="projects__tabpanel active">
-          <div class="projects__swiper">
+          <div class="projects__swiper projects__swiper-living">
             <div class="swiper-wrapper">
               <div class="projects__item swiper-slide">
                 <div class="projects__banner">
@@ -331,8 +332,46 @@
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
             </div>
+            
           </div>
         </div>
+
+        <div id="projects__tabpanel-2" role="tabpanel" class="projects__tabpanel">
+          <div class="projects__swiper projects__swiper-commerce">
+            <div class="swiper-wrapper">
+              <div class="projects__item swiper-slide">
+                <div class="projects__banner">
+                  <h3 class="projects__banner-title">ОФИС №1</h3>
+                  <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+                  <button class="projects__banner-button button">смотреть все фото</button>
+                </div>
+                <img src="/assets/images/project_morskoj.png" alt="slide 1" />
+              </div>
+              <div class="swiper-slide">
+                <div class="projects__banner">
+                  <h3 class="projects__banner-title">ОФИС №2</h3>
+                  <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+                  <button class="projects__banner-button button">смотреть все фото</button>
+                </div>
+                <img src="/assets/images/project_avatar.png" alt="slide 2" />
+              </div>
+              <div class="swiper-slide">
+                <div class="projects__banner">
+                  <h3 class="projects__banner-title">ОФИС №3</h3>
+                  <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+                  <button class="projects__banner-button button">смотреть все фото</button>
+                </div>
+                <img src="/assets/images/project_pushkin.png" alt="slide 3" />
+              </div>
+            </div>
+            <div class="swiper-controls">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
