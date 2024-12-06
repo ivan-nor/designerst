@@ -1,3 +1,11 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--color-dark);
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -56,6 +64,8 @@
 .header__submenu-list {
   position: absolute;
 
-  width: 300px;
-  padding-top: 16px;
+  background-color: var(--color-dark);
+
+  width: max-content;
+  padding: 16px;
 }

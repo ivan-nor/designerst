@@ -1,10 +1,12 @@
 :root {
-  --color-dark: #222222;
+  --color-dark: rgb(34, 34, 34);
   --color-blur-dark: #222222;
   /* opacity 60% */
   --color-accent: #DAA78D;
   --color-light: #F9F9FC;
   --color-gray: #ECECEC;
+  --color-secondary: #5D5D5D;
+  --color-black: #000000;
 
 
 
@@ -19,8 +21,18 @@
   --font-regular-line-height: 20px;
   --font-title-size: 52px;
   --font-title-line-height: 64px;
+  --letter-spacing: -0.005em;
 
   --header-height: 76px;
 
   --transition-duration: 0.2s;
+
+  --swiper-navigation-size: 18px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--color-light);
+  --swiper-theme-color: var(--color-accent);
+  --swiper-pagination-bullet-inactive-color: var(--color-light);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-size: 4px;
 }
