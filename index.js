@@ -64,15 +64,45 @@ const reviewsRatings = document.querySelectorAll('.reviews__card-rating')
 for (const rating of reviewsRatings) {
   const value = rating.getAttribute('data-rating')
   const stars = rating.querySelectorAll('.reviews__card-star')
-  console.log(rating, value, stars);
+  // console.log(rating, value, stars);
 
   for (star of stars) {
     const starNumber = star.getAttribute('data-star')
     const path = star.querySelector('path')
-    console.log(starNumber, path);
+    // console.log(starNumber, path);
 
     if (value >= starNumber) {
       path.style.fill = "#F9F9FC"
     }
   }
+}
+
+// FAQ
+const faqItems = document.querySelectorAll('.faq__item')
+const faqItemDescriptions = document.querySelectorAll('.faq__item-description')
+const faqButtons = document.querySelectorAll('.faq__item-button');
+
+console.log(faqItems, faqItemDescriptions, faqButtons);
+for (item of faqItems) {
+  item.addEventListener('click', (e) => {
+    const targetDescription = e.currentTarget.querySelector('.faq__item-description');
+
+    for (element of faqItems) {
+      const elButton = element.querySelector('.faq__item-button')
+      const elDescription = element.querySelector('.faq__item-description')
+
+      if (elDescription === targetDescription) {
+        if (elDescription.classList.contains('hide')) {
+          elButton.classList.add('rotate-180');
+          elDescription.classList.remove('hide')
+        } else {
+          elButton.classList.remove('rotate-180');
+          elDescription.classList.add('hide')
+        }
+      } else {
+        elButton.classList.remove('rotate-180');
+        elDescription.classList.add('hide')
+      }
+    }
+  })
 }

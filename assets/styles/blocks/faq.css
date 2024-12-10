@@ -1,0 +1,107 @@
+.faq .container {
+  padding: 64px 24px 48px 24px;
+}
+
+.faq__title {
+  padding-bottom: 40px;
+
+  font-family: "Tenor Sans";
+  font-size: 52px;
+  line-height: 64px;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.faq__item-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq__item-title {
+  position: relative;
+
+  font-weight: normal;
+  text-transform: none;
+
+  padding-left: 12px;
+}
+
+.faq__item-title::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--color-light);
+}
+
+.faq__item-description {
+  padding-right: 40px;
+  padding-left: ;
+
+  font-size: 14px;
+}
+
+.faq__item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq__item-button {
+  padding: 0;
+  height: 40px;
+  aspect-ratio: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+  border-radius: 50%;
+}
+
+.faq__item:hover {
+  cursor: pointer;
+}
+
+.faq__item-button svg {
+  fill: var(--color-accent);
+}
+
+.faq__item:hover .faq__item-button svg {
+  fill: var(--color-light);
+}
+
+.faq__item:hover .faq__item-button {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.faq__item-divider {
+  height: 2px;
+  width: 100%;
+
+  border: 1px solid var(--color-accent);
+}
+
+.faq * {
+  transition: rotate 0.2s;
+}
