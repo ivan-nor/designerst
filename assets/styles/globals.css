@@ -164,3 +164,7 @@ section {
   flex: 1;
 }
 
+.rotate-180 {
+  rotate: 180deg;
+  transition: rotate 0.2s;
+}
