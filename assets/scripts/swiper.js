@@ -64,3 +64,23 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const slideshowClassNames = ['morskoj', 'avatar', 'pushkin']
+for (const slideshowName of slideshowClassNames) {
+  new Swiper(`#modal-projects__slideshow-${slideshowName} > .projects__slideshow`, {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    pagination: {
+      el: `.swiper-pagination`,
+      clickable: true,
+    },
+    navigation: {
+      prevEl: `.custom-prev-button-${slideshowName}`,
+      nextEl: `.custom-next-button-${slideshowName}`,
+    },
+    keyboard: {
+      enabled: true,
+    },
+  });
+}
