@@ -50,6 +50,26 @@
     gap: 32px;
   }
 
+  .header__item.header__submenu {
+    position: relative;
+    width: 100%;
+  }
+
+  /* .header__submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+  } */
+
+  .header__submenu-list {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    /* left: 0; */
+    padding: 10px;
+    padding-right: 0;
+  }
+
   .header__link {
     padding: 0;
 
@@ -59,7 +79,7 @@
   }
 
   /* BANNER */
-  
+
 
   /* MODAL */
   .modal-content .contacts-container {
