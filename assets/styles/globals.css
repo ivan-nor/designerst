@@ -61,7 +61,7 @@ section {
 }
 
 .hide, .hide * {
-  display: none !important;
+  display: none;
   /* visibility: hidden; */
   /* max-height: 0; */
   /* opacity: 0; */

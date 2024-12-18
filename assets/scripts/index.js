@@ -3,12 +3,10 @@ const headerSubmenues = document.querySelectorAll('.header__submenu')
 // console.log('headerSubmenues :>> ', headerSubmenues);
 for (const headerSubmenu of headerSubmenues) {
   headerSubmenu.addEventListener("mouseenter", (e) => {
-    console.log(e.target);
     const subDropdownList = headerSubmenu.querySelector('.header__submenu-list')
     subDropdownList.classList.remove('hide');
   });
   headerSubmenu.addEventListener("mouseleave", (e) => {
-    console.log(e.target);
     const subDropdownList = headerSubmenu.querySelector('.header__submenu-list')
     subDropdownList.classList.add('hide');
   });
@@ -106,3 +104,20 @@ for (item of faqItems) {
     }
   })
 }
+
+// HEADER DROPDOWN
+const dropdownOpenButton = document.querySelector('.header__burger')
+const dropdownCloseButton = document.querySelector('.header__close')
+const dropdownMenuElement = document.querySelector('.header__menu')
+console.log(' :>> ', dropdownOpenButton, dropdownCloseButton, dropdownMenuElement);
+
+dropdownOpenButton.addEventListener('click', (e) => {
+  dropdownMenuElement.classList.remove('mobile-hidden')
+  dropdownOpenButton.classList.add('hide')
+  dropdownCloseButton.classList.remove('hide')
+})
+dropdownCloseButton.addEventListener('click', (e) => {
+  dropdownMenuElement.classList.add('mobile-hidden')
+  dropdownCloseButton.classList.add('hide')
+  dropdownOpenButton.classList.remove('hide')
+})
