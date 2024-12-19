@@ -88,16 +88,17 @@
     <section class="banner">
       <div class="container">
         <div class="banner__body">
-          <!-- #TODO: fix to h1 -->
-          <div class="banner__title">студия дизайна интерьера</div>
-          <!-- #TODO: div to p, small letters, p::first-letter uppercase -->
-          <div class="banner__description">Создаем уникальные интерьерные концепции с полным спектром услуг, от
-            разработки интерьера до отделки под ключ</div>
+          <h1 class="banner__title">студия дизайна интерьера</h1>
+          <p class="banner__description">создаем уникальные интерьерные концепции с полным спектром услуг, от
+            разработки интерьера до отделки под ключ</p>
+          <div class="banner__image desktop-hidden table-hidden">
+            <img src="assets/images/banner.png" alt="banner" />
+          </div>
           <div class="banner__footer">
             <a href="#modal-contacts__support" data-fancybox class="banner__footer-button button">
               <span>обсудить проект</span>
               <div class="banner__footer-button-icon">
-                <img src="assets/icons/arrow_forward.svg" alt="arrow forward icon" />
+                <img src="assets/icons/arrow_forward.svg" alt="arrow forward icon" width="24" height="24"/>
               </div>
             </a>
             <a href="#modal-services__support" data-fancybox class="banner__footer-button button button-transparent">
@@ -117,27 +118,25 @@
             </a>
           </div>
         </div>
-        <div class="banner__image">
-          <div class="banner__swiper swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="assets/images/banner.png" alt="banner" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/slide_1.png" alt="slide 1" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/slide_2.png" alt="slide 2" />
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/images/slide_3.png" alt="slide 3" />
-              </div>
+        <div class="banner__swiper swiper mobile-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/banner.png" alt="banner" />
             </div>
-            <div class="swiper-controls">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide_1.png" alt="slide 1" />
             </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide_2.png" alt="slide 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide_3.png" alt="slide 3" />
+            </div>
+          </div>
+          <div class="swiper-controls">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 .banner {
-  padding: 0%;
+  --section-padding: 0;
+  padding-block: var(--section-padding);
 }
 
 .banner .container {
@@ -26,6 +27,11 @@
   font-size: 52px;
   line-height: 64px;
   text-transform: uppercase;
+  font-weight: normal;
+}
+
+.banner__description::first-letter {
+  text-transform: uppercase;
 }
 
 .banner__footer {
@@ -40,19 +46,22 @@
 }
 
 .banner__footer-button-icon {
+  width: 24px;
+  height: 24px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner__image {
+.banner__swiper {
   /* width: auto;
   height: 100%; */
 
   flex: 1 1 560px;
 }
 
-.banner__image .swiper-slide {
+.banner__swiper .swiper-slide {
   /* max-height: 500px; */
   /* max-width: 560px; */
 
@@ -62,7 +71,7 @@
   align-items: center; */
 }
 
-.banner__image .swiper {
+.banner__swiper .swiper {
   /* max-height: 500px; */
   max-width: 560px;
 
@@ -71,7 +80,7 @@
   overflow: hidden;
 }
 
-.banner__image img {
+.banner__swiper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
