@@ -177,12 +177,9 @@ section {
 }
 
 .fancybox__content {
-  width: 100% !important;
-  height: auto !important;
-  /* max-width: 760px; */
-  padding: 0px !important;
+  padding: 0 !important;
 
-  border-radius: 24px;
+  border-radius: var(--border-radius);
 }
 
 .fancybox__content > .contacts__support {
