@@ -128,6 +128,21 @@
     width: 100%;
   }
 
+  /* LEAD */
+  h2.lead__title::before, 
+  h2.lead__title::after {
+    content: none;
+  }
+
+  
+
+
+
+
+
+
+
+
   /* MODAL */
   .modal-content .contacts-container {
     min-width: 250px;
