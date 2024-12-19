@@ -56,10 +56,6 @@
   padding-right: 0;
 }
 
-.header__submenu {
-  position: relative;
-}
-
 .header__submenu-list {
   position: absolute;
 
