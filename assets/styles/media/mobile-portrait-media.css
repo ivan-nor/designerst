@@ -24,7 +24,7 @@
   }
 
   section {
-    --section-padding: 24px;
+    --section-padding: 40px;
   }
 
   h2[class$="title"] {
@@ -34,7 +34,7 @@
 
   /* HEADER */
   .header {
-    padding-block: 18px;
+    padding-block: 16px;
 
     background-color: rgba(34, 34, 34, 0.6);
     backdrop-filter: blur(15px);
