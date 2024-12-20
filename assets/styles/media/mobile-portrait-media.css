@@ -32,6 +32,11 @@
     line-height: 40px;
   }
 
+  h3[class$="title"] {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
   /* HEADER */
   .header {
     padding-block: 16px;
@@ -193,7 +198,42 @@
     bottom: -16px;
     right: -16px;
   }
-  
+
+  /* SERVICES */
+  .services__title {
+    padding-bottom: 24px;
+  }
+
+  .services__body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .services__support-title {
+    padding-bottom: 16px;
+
+    font-family: "Montserrat SemiBold";
+  }
+
+  .services__support{
+    background-position-x: 70%;
+    background-position-y: 60%;
+  }
+
+  .services__card {
+    gap: 12px;
+  }
+
+  .services__card-price {
+    padding-bottom: 12px;
+
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .services__card-list {
+    order: 3;
+  }
 
   /* MODAL */
   .modal-content .contacts-container {

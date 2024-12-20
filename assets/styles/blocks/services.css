@@ -81,11 +81,11 @@
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--color-light);
-  color: var(--color-light);
+  color: var(--color-gray);
 }
 
 .services__support-input::placeholder {
-  color: var(--color-light);
+  color: var(--color-gray);
 }
 
 .services__support-button {
