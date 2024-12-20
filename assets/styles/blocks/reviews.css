@@ -1,3 +1,11 @@
+.reviews__title {
+  margin-bottom: 40px;
+  font-family: "Tenor Sans";
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+}
+
 .reviews__swiper {
   position: relative;
 

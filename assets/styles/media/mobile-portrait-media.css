@@ -235,6 +235,42 @@
     order: 3;
   }
 
+  /* REVIEWS */
+  .reviews__title {
+    margin-bottom: 24px;
+  }
+
+  .reviews__card {
+    padding: 24px 42px;
+  }
+  .reviews__card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .reviews__card-link {
+    order: 4;
+  }
+
+  .reviews__swiper {
+    padding-inline: 0;
+    overflow: visible;
+
+    --swiper-navigation-size: 31px;
+  }
+
+  .reviews .swiper-button-prev {
+    top: -44px;
+    right: 59px;
+    left: auto;
+  }
+
+  .reviews .swiper-button-next {
+    top: -44px;
+    right: 5px;
+  }
+
   /* MODAL */
   .modal-content .contacts-container {
     min-width: 250px;

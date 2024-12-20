@@ -59,11 +59,20 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
   slidesPerView: 2,
   spaceBetween: 40,
   autoHeight: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
 });
+reviewsSwiper.on('')
 
 const slideshowClassNames = ['morskoj', 'avatar', 'pushkin']
 for (const slideshowName of slideshowClassNames) {
@@ -84,3 +93,5 @@ for (const slideshowName of slideshowClassNames) {
     },
   });
 }
+
+
