@@ -355,4 +355,14 @@
     line-height: 16px;
     color: var(--color-gray);
   }
+
+
+  /* MODAL */
+  .fancybox__content .services__support {
+    width: 100%;
+  }
+
+  .fancybox__content .contacts__button {
+    width: max-content;
+  }
 }
