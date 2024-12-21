@@ -270,6 +270,55 @@
     object-position: center;
   }
 
+  /* CONTACTS */
+  .contacts__title {
+    margin-bottom: 24px;
+  }
+
+  .contacts__container {
+    flex-direction: column;
+  }
+
+  .contacts__support {
+    width: 100%;
+    padding: 16px;
+
+    flex-direction: column;
+    gap: 24px;
+
+    order: 1;
+  }
+
+  .contacts__form {
+    gap: 12px;
+  }
+
+  .contacts__input {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .contacts__card {
+    width: 100%;
+    padding: 16px;
+
+    order: 2;
+  }
+
+  .contacts__card-list {
+    gap: 16px;
+    padding-bottom: 0;
+  }
+
+  .contacts__socials-list {
+    padding-bottom: 0;
+  }
+
+  .contacts__button {
+    width: 100%;
+    margin-top: 4px;
+  }
+
   /* REVIEWS */
   .reviews__title {
     margin-bottom: 24px;
