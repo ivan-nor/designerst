@@ -13,18 +13,15 @@
     display: none !important;
   }
 
-  .container {
-    --container-width: 1200px;
-    --container-padding: 16px;
-
-    /* width: 100vw; */
-    max-width: 480px;
-    min-width: 320px;
-    /* padding-inline: 16px; */
-  }
-
   section {
     --section-padding: 40px;
+  }
+
+  .container {
+    --container-padding: 16px;
+
+    max-width: 480px;
+    min-width: 320px;
   }
 
   h2[class$="title"] {
@@ -407,8 +404,11 @@
   }
 
   /* MODAL */
-  .modal-content .contacts-container {
-    min-width: 250px;
-    padding-inline: 16px;
+  .fancybox__content .services__support {
+    width: 100%;
+  }
+
+  .fancybox__content .contacts__button {
+    width: max-content;
   }
 }
