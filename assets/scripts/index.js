@@ -16,6 +16,9 @@ for (const headerSubmenu of headerSubmenues) {
 window.addEventListener('load', updateMainMargin);
 window.addEventListener('resize', updateMainMargin);
 function updateMainMargin() {
+  dropdownMenuElement.classList.add('mobile-hidden')
+  dropdownCloseButton.classList.add('hide')
+  dropdownOpenButton.classList.remove('hide')
   const headerHeight = document.querySelector('header').offsetHeight;
   // const mainHeader = document.querySelector('.main-header');
   // const subHeaderHeight = subHeader.offsetHeight

@@ -73,4 +73,22 @@
     border: 0;
   }
 
+  /* BANNER */
+  .banner__image {
+    width: 100%;
+  }
+
+  .banner__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner__footer {
+    justify-content: space-between;
+  }
+
+  .banner__footer-button {
+    width: 50%;
+    justify-content: center;
+  }
 }
