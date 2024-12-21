@@ -407,8 +407,11 @@
   }
 
   /* MODAL */
-  .modal-content .contacts-container {
-    min-width: 250px;
-    padding-inline: 16px;
+  .fancybox__content .services__support {
+    width: 100%;
+  }
+
+  .fancybox__content .contacts__button {
+    width: max-content;
   }
 }
