@@ -341,4 +341,18 @@
     padding-left: 0;
   }
   
+  /* BLOG */
+  .blog__description {
+    max-width: 100%;
+  }
+
+  .blog__cards {
+    flex-direction: column;
+  }
+
+  .blog__card-footer {
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--color-gray);
+  }
 }
