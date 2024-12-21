@@ -53,7 +53,7 @@ for (const tab of projectsTabButtons) {
       e.target.setAttribute('aria-selected', 'true')
     }
 
-    console.log('tab, tabpanel, activeTabElemennt :>> ', tab, tabPanel, activeTabElement, e.target);
+    // console.log('tab, tabpanel, activeTabElemennt :>> ', tab, tabPanel, activeTabElement, e.target);
   })
 }
 
@@ -64,7 +64,7 @@ for (const rating of reviewsRatings) {
   const stars = rating.querySelectorAll('.reviews__card-star')
   // console.log(rating, value, stars);
 
-  for (star of stars) {
+  for (const star of stars) {
     const starNumber = star.getAttribute('data-star')
     const path = star.querySelector('path')
     // console.log(starNumber, path);
@@ -80,8 +80,8 @@ const faqItems = document.querySelectorAll('.faq__item')
 const faqItemDescriptions = document.querySelectorAll('.faq__item-description')
 const faqButtons = document.querySelectorAll('.faq__item-button');
 
-console.log(faqItems, faqItemDescriptions, faqButtons);
-for (item of faqItems) {
+// console.log(faqItems, faqItemDescriptions, faqButtons);
+for (const item of faqItems) {
   item.addEventListener('click', (e) => {
     const targetDescription = e.currentTarget.querySelector('.faq__item-description');
 
@@ -109,7 +109,7 @@ for (item of faqItems) {
 const dropdownOpenButton = document.querySelector('.header__burger')
 const dropdownCloseButton = document.querySelector('.header__close')
 const dropdownMenuElement = document.querySelector('.header__menu')
-console.log(' :>> ', dropdownOpenButton, dropdownCloseButton, dropdownMenuElement);
+// console.log(' :>> ', dropdownOpenButton, dropdownCloseButton, dropdownMenuElement);
 
 dropdownOpenButton.addEventListener('click', (e) => {
   dropdownMenuElement.classList.remove('mobile-hidden')
@@ -121,3 +121,19 @@ dropdownCloseButton.addEventListener('click', (e) => {
   dropdownCloseButton.classList.add('hide')
   dropdownOpenButton.classList.remove('hide')
 })
+
+// PROJECTS MOBILE PAGINATION
+const projectsButtons = document.querySelectorAll('.projects__button')
+for (const button of projectsButtons) {
+  const ul = button.parentNode.querySelector('.projects__list')
+
+  button.addEventListener('click',() => {
+    const hiddenListItems = ul.querySelectorAll('.hide')
+    if (hiddenListItems[0]) {
+      hiddenListItems[0].classList.remove('hide')
+    }
+    if (hiddenListItems.length === 1) {
+      button.classList.add('hide')
+    }
+  })
+}

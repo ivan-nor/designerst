@@ -289,7 +289,7 @@
     <section class="projects">
       <div class="container">
         <h2 id="tabs__label" class="projects__title" data-text="Наши проекты">Наши проекты</h2>
-        <div id="projects__tabs-switcher" class="tabs mobile-hidden" role="tablist" aria-labelledby="tabs__label">
+        <div id="projects__tabs-switcher" class="tabs" role="tablist" aria-labelledby="tabs__label">
           <button tabindex="0" class="projects__tab tabs__button" role="tab" type="button" id="projects__tab-1"
             aria-selected="true" aria-controls="projects__tabpanel-1">
             жилые
@@ -301,10 +301,10 @@
         </div>
 
         <div id="projects__tabpanel-1" role="tabpanel" class="projects__tabpanel active">
-          <div class="projects__swiper projects__swiper-living">
+          <div class="projects__swiper projects__swiper-living mobile-hidden">
             <div class="swiper-wrapper">
-              <div class="projects__item swiper-slide">
-                <div class="projects__banner">
+              <div class="swiper-slide">
+                <div class="projects__banner mobile-hidden">
                   <h3 class="projects__banner-title">МОРСКОЙ 28</h3>
                   <p class="projects__banner-description">Проект представляет собой семейную квартиру площадью 190 кв.м выполненную в светлом интерьере с теплой атмосферой. Уют этому пространству придает большое количество зелени, которая гармонично вписывается в общий дизайн, делая квартиру Cat friendly.</p>
                   <a href="#modal-projects__slideshow-morskoj" data-fancybox class="projects__banner-button button">смотреть все фото</a>
@@ -312,7 +312,7 @@
                 <img src="assets/images/project_morskoj.png" alt="slide 1" />
               </div>
               <div class="swiper-slide">
-                <div class="projects__banner">
+                <div class="projects__banner mobile-hidden">
                   <h3 class="projects__banner-title">АВАТАР</h3>
                   <p class="projects__banner-description">Проект дизайна интерьера квартиры площадью 90 кв.м в ЖК «Аватар» представляет собой воплощение современного элитного стиля, сочетающего графитовые оттенки с теплотой американского ореха. Этот уникальный интерьер создан для тех, кто ценит роскошь и функциональность в каждом элементе.</p>
                   <a href="#modal-projects__slideshow-avatar" data-fancybox class="projects__banner-button button">смотреть все фото</a>
@@ -320,7 +320,7 @@
                 <img src="assets/images/project_avatar.png" alt="slide 2" />
               </div>
               <div class="swiper-slide">
-                <div class="projects__banner">
+                <div class="projects__banner mobile-hidden">
                   <h3 class="projects__banner-title">PUSHKIN</h3>
                   <p class="projects__banner-description">Проект представляет собой стильную и современную квартиру площадью 100 кв.м, расположенную в жилом комплексе "Инкери" в городе Пушкин. Интерьер квартиры выполнен в светлых тонах, что придает пространству ощущение легкости и простора.</p>
                   <a href="#modal-projects__slideshow-pushkin" data-fancybox class="projects__banner-button button">смотреть все фото</a>
@@ -328,19 +328,99 @@
                 <img src="assets/images/project_pushkin.png" alt="slide 3" />
               </div>
             </div>
-            <div class="swiper-controls">
+            <div class="swiper-controls mobile-hidden">
               <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
             </div>
           </div>
+          <div class="projects__mobile desktop-hidden">
+            <ul class="projects__list ">
+              <li class="projects__item">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_morskoj.png" alt="project morskoj image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_morskoj copy.png" alt="project morskoj image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_morskoj copy 2.png" alt="project morskoj image 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">МОРСКОЙ 28</h3>
+                <p class="projects__item-description">Проект представляет собой семейную квартиру площадью 190 кв.м выполненную в светлом интерьере с теплой атмосферой. Уют этому пространству придает большое количество зелени, которая гармонично вписывается в общий дизайн, делая квартиру Cat friendly.</p>
+              </li>
+              <li class="projects__item">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_avatar.png" alt="project avatar image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_avatar copy.png" alt="project avatar image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_avatar copy 2.png" alt="project avatar image 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">АВАТАР</h3>
+                <p class="projects__item-description">Проект дизайна интерьера квартиры площадью 90 кв.м в ЖК «Аватар» представляет собой воплощение современного элитного стиля, сочетающего графитовые оттенки с теплотой американского ореха. Этот уникальный интерьер создан для тех, кто ценит роскошь и функциональность в каждом элементе.</p>
+              </li>
+              <li class="projects__item">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">PUSHKIN</h3>
+                <p class="projects__item-description">Проект представляет собой стильную и современную квартиру площадью 100 кв.м, расположенную в жилом комплексе "Инкери" в городе Пушкин. Интерьер квартиры выполнен в светлых тонах, что придает пространству ощущение легкости и простора.</p>
+              </li>
+              <li class="projects__item hide">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">PUSHKIN</h3>
+                <p class="projects__item-description">Проект представляет собой стильную и современную квартиру площадью 100 кв.м, расположенную в жилом комплексе "Инкери" в городе Пушкин. Интерьер квартиры выполнен в светлых тонах, что придает пространству ощущение легкости и простора.</p>
+              </li>
+              <li class="projects__item hide">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">PUSHKIN</h3>
+                <p class="projects__item-description">Проект представляет собой стильную и современную квартиру площадью 100 кв.м, расположенную в жилом комплексе "Инкери" в городе Пушкин. Интерьер квартиры выполнен в светлых тонах, что придает пространству ощущение легкости и простора.</p>
+              </li>
+            </ul>
+            <button class="projects__button button">посмотреть еще проекты</button>
+          </div>
         </div>
 
         <div id="projects__tabpanel-2" role="tabpanel" class="projects__tabpanel">
-          <div class="projects__swiper projects__swiper-commerce">
+          <div class="projects__swiper projects__swiper-commerce mobile-hidden">
             <div class="swiper-wrapper">
               <div class="projects__item swiper-slide">
-                <div class="projects__banner">
+                <div class="projects__banner mobile-hidden">
                   <h3 class="projects__banner-title">ОФИС №1</h3>
                   <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
                   <button class="projects__banner-button button">смотреть все фото</button>
@@ -348,7 +428,7 @@
                 <img src="assets/images/project_morskoj.png" alt="slide 1" />
               </div>
               <div class="swiper-slide">
-                <div class="projects__banner">
+                <div class="projects__banner mobile-hidden">
                   <h3 class="projects__banner-title">ОФИС №2</h3>
                   <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
                   <button class="projects__banner-button button">смотреть все фото</button>
@@ -356,7 +436,7 @@
                 <img src="assets/images/project_avatar.png" alt="slide 2" />
               </div>
               <div class="swiper-slide">
-                <div class="projects__banner">
+                <div class="projects__banner mobile-hidden">
                   <h3 class="projects__banner-title">ОФИС №3</h3>
                   <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
                   <button class="projects__banner-button button">смотреть все фото</button>
@@ -364,11 +444,106 @@
                 <img src="assets/images/project_pushkin.png" alt="slide 3" />
               </div>
             </div>
-            <div class="swiper-controls">
+            <div class="swiper-controls mobile-hidden">
               <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
             </div>
+          </div>
+          <div class="projects__mobile  desktop-hidden">
+            <ul class="projects__list">
+              <li class="projects__item">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">ОФИС №1</h3>
+                <p class="projects__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+              </li>
+              <li class="projects__item">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">ОФИС №1</h3>
+                <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+              </li>
+              <li class="projects__item">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">ОФИС №3</h3>
+                <p class="projects__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+              </li>
+              <li class="projects__item hide">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">ОФИС №1</h3>
+                <p class="projects__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+              </li>
+              <li class="projects__item hide">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">ОФИС №1</h3>
+                <p class="projects__banner-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+              </li>
+              <li class="projects__item hide">
+                <div class="projects__images">
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin.png" alt="project pushkin image 1">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy.png" alt="project pushkin image 2">
+                  </div>
+                  <div class="projects__image">
+                    <img src="./assets/images/projects/project_pushkin copy 2.png" alt="project pushkinimage 3">
+                  </div>
+                </div>
+                <h3 class="projects__item-title">ОФИС №3</h3>
+                <p class="projects__item-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga amet maxime quam corrupti quis, laboriosam nemo deleniti rerum eius accusamus.</p>
+              </li>
+            </ul>
+            <button class="projects__button button">посмотреть еще проекты</button>
           </div>
         </div>
 
@@ -912,7 +1087,6 @@
   </main>
 
   <script src="assets/scripts/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="assets/scripts/swiper-bundle.min.js"></script>
   <script src="assets/scripts/swiper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>

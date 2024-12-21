@@ -235,6 +235,41 @@
     order: 3;
   }
 
+  /* PROJECTS */
+  .projects__item-title {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+
+  .projects__images {
+    width: 100%;
+    overflow-x: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .projects__image {
+    max-width: 280px;
+    min-width: 240px;
+    width: 50%;
+    aspect-ratio: 1;
+
+    flex-grow: 2;
+
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  .projects__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
   /* REVIEWS */
   .reviews__title {
     margin-bottom: 24px;
