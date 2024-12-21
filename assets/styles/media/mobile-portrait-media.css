@@ -338,10 +338,11 @@
   }
 
   .reviews__swiper {
-    padding-inline: 0;
-    overflow: visible;
-
     --swiper-navigation-size: 31px;
+
+    padding-inline: 0;
+
+    overflow: visible;
   }
 
   .reviews .swiper-button-prev {
@@ -353,6 +354,56 @@
   .reviews .swiper-button-next {
     top: -44px;
     right: 5px;
+  }
+
+  /* FAQ */
+  h3.faq__item-title {
+    padding: 0;
+
+    font-family: "Montserrat SemiBold";
+    font-size: 16px;
+    line-height: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .faq__item-header:has(.rotate-180)  {
+    align-items: start;
+  }
+
+  .faq__item-header:has(.rotate-180) .faq__item-title {
+    white-space: wrap;
+    overflow: visible;
+    text-overflow: none;
+  }
+
+  .faq__item-title::before {
+    content: none;
+  }
+
+  .faq__item-button {
+    height: 24px;
+  }
+
+  .faq__item-description {
+    padding-left: 0;
+  }
+
+  /* BLOG */
+  .blog__description {
+    max-width: 100%;
+  }
+
+  .blog__cards {
+    flex-direction: column;
+  }
+
+  .blog__card-footer {
+    font-size: 10px;
+    line-height: 16px;
+    color: var(--color-gray);
   }
 
   /* MODAL */

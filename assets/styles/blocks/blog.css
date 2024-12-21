@@ -50,6 +50,10 @@
 .blog__card-footer {
   display: flex;
   justify-content: space-between;
+
+  color: var(--color-gray);
+  line-height: 16px;
+  font-size: 10px;
 }
 
 .blog__card-image {

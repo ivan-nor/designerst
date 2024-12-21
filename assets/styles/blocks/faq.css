@@ -79,16 +79,16 @@
 }
 
 .faq__item-button svg {
-  fill: var(--color-accent);
-}
-
-.faq__item:hover .faq__item-button svg {
   fill: var(--color-light);
 }
 
+.faq__item:hover .faq__item-button svg {
+  fill: var(--color-accent);
+}
+
 .faq__item:hover .faq__item-button {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
 }
 
 .faq__item-divider {
