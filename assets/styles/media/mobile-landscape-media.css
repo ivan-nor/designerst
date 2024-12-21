@@ -305,5 +305,40 @@
     top: -44px;
     right: 5px;
   }
+
+  /* FAQ */
+  h3.faq__item-title {
+    padding-right: 16px;
+
+    font-family: "Montserrat SemiBold";
+    font-size: 16px;
+    line-height: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .faq__item-header:has(.rotate-180)  {
+    align-items: start;
+  }
+
+  .faq__item-header:has(.rotate-180) .faq__item-title {
+    white-space: wrap;
+    overflow: visible;
+    text-overflow: none;
+  }
+
+  /* .faq__item-title::before {
+    content: none;
+  } */
+
+  .faq__item-button {
+    height: 24px;
+  }
+
+  .faq__item-description {
+    padding-left: 0;
+  }
   
 }
