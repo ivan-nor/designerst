@@ -277,4 +277,33 @@
     width: 100%;
     margin-top: 4px;
   }
+
+  /* REVIEWS */
+  .reviews__title {
+    margin-bottom: 24px;
+  }
+
+  .reviews__card {
+    padding: 24px 42px;
+  }
+
+  .reviews__swiper {
+    --swiper-navigation-size: 31px;
+
+    padding-inline: 0;
+
+    overflow: visible;
+  }
+
+  .reviews .swiper-button-prev {
+    top: -44px;
+    right: 59px;
+    left: auto;
+  }
+
+  .reviews .swiper-button-next {
+    top: -44px;
+    right: 5px;
+  }
+  
 }

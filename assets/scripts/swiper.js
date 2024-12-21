@@ -63,7 +63,7 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
     0: {
       slidesPerView: 1,
     },
-    480: {
+    641: {
       slidesPerView: 2,
     },
   },
