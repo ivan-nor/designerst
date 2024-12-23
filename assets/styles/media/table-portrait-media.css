@@ -173,4 +173,9 @@
     width: 20px;
     height: 20px;
   }
+
+  /* FAQ */
+  .faq__item-description {
+    padding-left: 12px;
+  }
 }

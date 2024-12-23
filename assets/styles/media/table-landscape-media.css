@@ -31,4 +31,11 @@
   .reviews__card-title {
     font-size: clamp(24px, 3vw, 32px);
   }
+
+  /* FAQ */
+  .faq__item-description {
+    padding-left: 12px;
+  }
+
+  
 }
