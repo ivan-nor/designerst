@@ -26,4 +26,9 @@
   .projects__banner {
     width: 340px;
   }
+
+  /* REVIEWS */
+  .reviews__card-title {
+    font-size: clamp(24px, 3vw, 32px);
+  }
 }
