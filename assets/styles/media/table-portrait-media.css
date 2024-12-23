@@ -178,4 +178,9 @@
   .faq__item-description {
     padding-left: 12px;
   }
+
+  /* BLOG */
+  .blog__cards {
+    gap: 24px;
+  }
 }
