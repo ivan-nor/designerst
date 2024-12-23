@@ -12,5 +12,30 @@
     padding: 44px 0;
   }
 
-  
+  /* BANNER */
+  .banner .container {
+    gap: 20px;
+  }
+
+  .banner__body {
+    flex: auto;
+    gap: 24px;
+  }
+
+  .banner__title {
+    font-size: clamp(40px, 6vw, 56px);
+    line-height: 1.15;
+  }
+
+  .banner__footer {
+    flex-direction: column;
+  }
+
+  .banner__footer-button {
+    justify-content: center;
+  }
+
+  .banner__swiper {
+    flex: auto;
+  }
 }

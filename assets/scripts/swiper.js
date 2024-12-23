@@ -5,9 +5,9 @@ const bannerSwiper = new Swiper('.banner__swiper', {
   autoHeight: true,
   centeredSlides: true,
   breakpoints: {
-    980: {
-      width: 400,
-    },
+    // 980: {
+    //   width: 400,
+    // },
     1200: {
       width: 560,
     }
