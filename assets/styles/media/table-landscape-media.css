@@ -12,6 +12,18 @@
     display: none;
   }
 
-  
+  /* SERVICES */
+  .services__support {
+    background-position-x: 70%;
+    background-position-y: 50%;
+  }
 
+  /* Projects */
+  .projects__mobile {
+    display: none;
+  }
+
+  .projects__banner {
+    width: 340px;
+  }
 }
