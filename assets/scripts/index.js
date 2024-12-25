@@ -1,6 +1,5 @@
 // выпадающий список в меню при наведении
 const headerSubmenues = document.querySelectorAll('.header__submenu')
-// console.log('headerSubmenues :>> ', headerSubmenues);
 for (const headerSubmenu of headerSubmenues) {
   headerSubmenu.addEventListener("mouseenter", (e) => {
     const subDropdownList = headerSubmenu.querySelector('.header__submenu-list')
@@ -20,11 +19,6 @@ function updateMainMargin() {
   dropdownCloseButton.classList.add('hide')
   dropdownOpenButton.classList.remove('hide')
   const headerHeight = document.querySelector('header').offsetHeight;
-  // const mainHeader = document.querySelector('.main-header');
-  // const subHeaderHeight = subHeader.offsetHeight
-  // const mainHeaderHeadHeight = mainHeaderHead.offsetHeight
-  // const paddingHeight = subHeader.offsetHeight + mainHeaderHead.offsetHeight;
-  // console.log(mainHeader, subHeaderHeight, mainHeaderHeadHeight, paddingHeight);
   const paddingHeight = headerHeight
   document.querySelector('main').style.paddingTop = `${paddingHeight}px`;
 }
@@ -55,8 +49,6 @@ for (const tab of projectsTabButtons) {
       e.target.setAttribute('tabindex', '0')
       e.target.setAttribute('aria-selected', 'true')
     }
-
-    // console.log('tab, tabpanel, activeTabElemennt :>> ', tab, tabPanel, activeTabElement, e.target);
   })
 }
 
@@ -65,12 +57,10 @@ const reviewsRatings = document.querySelectorAll('.reviews__card-rating')
 for (const rating of reviewsRatings) {
   const value = rating.getAttribute('data-rating')
   const stars = rating.querySelectorAll('.reviews__card-star')
-  // console.log(rating, value, stars);
 
   for (const star of stars) {
     const starNumber = star.getAttribute('data-star')
     const path = star.querySelector('path')
-    // console.log(starNumber, path);
 
     if (value >= starNumber) {
       path.style.fill = "#F9F9FC"
@@ -82,8 +72,6 @@ for (const rating of reviewsRatings) {
 const faqItems = document.querySelectorAll('.faq__item')
 const faqItemDescriptions = document.querySelectorAll('.faq__item-description')
 const faqButtons = document.querySelectorAll('.faq__item-button');
-
-// console.log(faqItems, faqItemDescriptions, faqButtons);
 for (const item of faqItems) {
   item.addEventListener('click', (e) => {
     const targetDescription = e.currentTarget.querySelector('.faq__item-description');
@@ -112,20 +100,21 @@ for (const item of faqItems) {
 const dropdownOpenButton = document.querySelector('.header__burger')
 const dropdownCloseButton = document.querySelector('.header__close')
 const dropdownMenuElement = document.querySelector('.header__menu')
-// console.log(' :>> ', dropdownOpenButton, dropdownCloseButton, dropdownMenuElement);
-
 dropdownOpenButton.addEventListener('click', (e) => {
-  dropdownMenuElement.classList.remove('mobile-hidden')
+  dropdownMenuElement.classList.remove('mobile-hidden', 'table-hidden')
   dropdownOpenButton.classList.add('hide')
   dropdownCloseButton.classList.remove('hide')
 })
-dropdownCloseButton.addEventListener('click', (e) => {
-  dropdownMenuElement.classList.add('mobile-hidden')
+const closeDropdownMenu = () => {
+  dropdownMenuElement.classList.add('mobile-hidden', 'table-hidden')
   dropdownCloseButton.classList.add('hide')
   dropdownOpenButton.classList.remove('hide')
-})
+}
+dropdownCloseButton.addEventListener('click', closeDropdownMenu)
+window.addEventListener('load', closeDropdownMenu);
+window.addEventListener('resize', closeDropdownMenu);
 
-// PROJECTS MOBILE PAGINATION
+/* PROJECTS MOBILE PAGINATION */
 const projectsButtons = document.querySelectorAll('.projects__button')
 for (const button of projectsButtons) {
   const ul = button.parentNode.querySelector('.projects__list')

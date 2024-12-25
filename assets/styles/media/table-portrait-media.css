@@ -12,6 +12,25 @@
     padding: 44px 0;
   }
 
+  /* HEADER */
+  .header {
+    padding-block: 16px;
+  }
+
+  .header .container {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .header__menu {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .header__list {
+    justify-content: center;
+  }
+
   /* BANNER */
   .banner .container {
     gap: 20px;
@@ -182,5 +201,11 @@
   /* BLOG */
   .blog__cards {
     gap: 24px;
+  }
+
+  /* Modal */
+
+  .fancybox__content > .services__support {
+    max-width: 600px;
   }
 }
